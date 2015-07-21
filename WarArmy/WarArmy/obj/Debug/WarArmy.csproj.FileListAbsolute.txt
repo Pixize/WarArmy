@@ -12,3 +12,6 @@ C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.Properties
 C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.csproj.GenerateResource.Cache
 C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.exe
 C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.pdb
+C:\war2k1\WarArmy\WarArmy\bin\Debug\WarArmy.exe.config
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.exe
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.pdb
