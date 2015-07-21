@@ -1,0 +1,117 @@
+﻿<Window x:Class="WarArmy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WarArmy"
+        mc:Ignorable="d"
+        Title="War Army Simulator" Height="700" Width="550">
+    <Grid>
+
+        <!--all tabs -->
+        <TabControl Name="AppCorps">
+            <!--Tab of Army-->
+            <TabItem Header="Armées" >
+                <!-- Grid for the unit-->
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.5*"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    
+                    
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50" Name="SpaceUp0"></RowDefinition>
+                        
+                        <RowDefinition Height="20" Name="TextGS1"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceGs2"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextG3"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceG4"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextCdg5"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceCdg6"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextM7"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceM8"></RowDefinition>
+                        
+                        <RowDefinition Height="20" Name="TextP9"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceP10"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextProt11"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceProt12"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextMut13"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceMut14"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextSMut15"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceSMut16"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextCom17"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceCom18"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextNuc19"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceNuc20"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextChev21"></RowDefinition>
+                        <RowDefinition Height="10" Name="SpaceChev22"></RowDefinition>
+
+                        <RowDefinition Height="20" Name="TextPal23"></RowDefinition>
+                        <RowDefinition Height="10" Name="Spacepal24"></RowDefinition>
+
+
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Column="1" Text="Votre Armée" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="ExtraBlack"></TextBlock>
+                    <TextBlock Grid.Column="2" Text="Armée ennemie" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="ExtraBlack"></TextBlock>
+
+                     <!-- All the textBox for each unit with space betwen-->
+                    <TextBlock Text="Goule Sauvage :" Grid.Row="1" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Goule:" Grid.Row="3" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text=" Chef des goules:" Grid.Row="5" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text=" Mercenaire:" Grid.Row="7" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text=" Pillard:" Grid.Row="9" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text=" Protectron:" Grid.Row="11" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text=" Mutant:" Grid.Row="13" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Super mutant:" Grid.Row="15" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Commando:" Grid.Row="17" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Nucleotron:" Grid.Row="19" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Chevalier:" Grid.Row="21" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Paladin:" Grid.Row="23" HorizontalAlignment="Stretch"></TextBlock>
+                    
+                    <!-- Our army units TextBox-->
+                    <TextBox Grid.Row="1" Grid.Column="1" Width="200" Name="OA_Gs" ></TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="1" Width="200" Name="OA_G" ></TextBox>
+                    <TextBox Grid.Row="5" Grid.Column="1" Width="200" Name="OA_Cdg" ></TextBox>
+                    <TextBox Grid.Row="7" Grid.Column="1" Width="200" Name="OA_Merc" ></TextBox>
+                    <TextBox Grid.Row="9" Grid.Column="1" Width="200" Name="OA_merc" ></TextBox>
+                    <TextBox Grid.Row="11" Grid.Column="1" Width="200" Name="OA_Prot" ></TextBox>
+                    <TextBox Grid.Row="13" Grid.Column="1" Width="200" Name="OA_Mut" ></TextBox>
+                    <TextBox Grid.Row="15" Grid.Column="1" Width="200" Name="OA_SupMut" ></TextBox>
+                    <TextBox Grid.Row="17" Grid.Column="1" Width="200" Name="OA_Comm" ></TextBox>
+                    <TextBox Grid.Row="19" Grid.Column="1" Width="200" Name="OA_Nucl" ></TextBox>
+                    <TextBox Grid.Row="21" Grid.Column="1" Width="200" Name="OA_Chev" ></TextBox>
+                    <TextBox Grid.Row="23" Grid.Column="1" Width="200" Name="OA_Pal" ></TextBox>
+
+                    <!-- Ennemy army units TextBox-->
+                    <TextBox Grid.Row="1" Grid.Column="3" Width="200" Name="EA_Gs" ></TextBox>
+                    <TextBox Grid.Row="3" Grid.Column="3" Width="200" Name="EA_G" ></TextBox>
+                    <TextBox Grid.Row="5" Grid.Column="3" Width="200" Name="EA_Cdg" ></TextBox>
+                    <TextBox Grid.Row="7" Grid.Column="3" Width="200" Name="EA_Merc" ></TextBox>
+                    <TextBox Grid.Row="9" Grid.Column="3" Width="200" Name="EA_merc" ></TextBox>
+                    <TextBox Grid.Row="11" Grid.Column="3" Width="200" Name="EA_Prot" ></TextBox>
+                    <TextBox Grid.Row="13" Grid.Column="3" Width="200" Name="EA_Mut" ></TextBox>
+                    <TextBox Grid.Row="15" Grid.Column="3" Width="200" Name="EA_SupMut" ></TextBox>
+                    <TextBox Grid.Row="17" Grid.Column="3" Width="200" Name="EA_Comm" ></TextBox>
+                    <TextBox Grid.Row="19" Grid.Column="3" Width="200" Name="EA_Nucl" ></TextBox>
+                    <TextBox Grid.Row="21" Grid.Column="3" Width="200" Name="EA_Chev" ></TextBox>
+                    <TextBox Grid.Row="23" Grid.Column="3" Width="200" Name="EA_Pal" ></TextBox>
+
+
+                </Grid>
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

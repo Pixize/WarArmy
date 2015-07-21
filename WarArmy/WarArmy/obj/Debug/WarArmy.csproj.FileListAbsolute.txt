@@ -1,0 +1,14 @@
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\bin\Debug\WarArmy.exe.config
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\bin\Debug\WarArmy.exe
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\bin\Debug\WarArmy.pdb
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.csprojResolveAssemblyReference.cache
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\MainWindow.g.cs
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\App.g.cs
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy_MarkupCompile.cache
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy_MarkupCompile.lref
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\MainWindow.baml
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.g.resources
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.Properties.Resources.resources
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.csproj.GenerateResource.Cache
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.exe
+C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.pdb
