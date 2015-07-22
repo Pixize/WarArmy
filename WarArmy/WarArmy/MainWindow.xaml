@@ -7,13 +7,14 @@
         
         xmlns:core="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
-        Title="War Army Simulator" Height="700" Width="550">
+        Title="War Army Simulator" Height="700" Width="600" Background="AliceBlue" VerticalAlignment="Center" HorizontalAlignment="Center">
 
     <Window.Resources>
         <ResourceDictionary>
             <core:Double x:Key="MyDouble">180</core:Double>
             <GridLength x:Key="heigthTextBlock">20</GridLength>
             <GridLength x:Key="HeigthInterligne">10</GridLength>
+            <GridLength x:Key="BigHeigthGrid">50</GridLength>
         </ResourceDictionary>
     </Window.Resources>
 
@@ -34,53 +35,59 @@
                     
                     
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="50" Name="SpaceUp0"></RowDefinition>
+                        <RowDefinition Height="{StaticResource BigHeigthGrid}" Name="SpaceUp0"></RowDefinition>
                         
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextGS1"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceGs2"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceGs2"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextG3"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceG4"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceG4"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextCdg5"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceCdg6"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceCdg6"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextM7"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceM8"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceM8"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextP9"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceP10"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceP10"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextProt11"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceProt12"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceProt12"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextMut13"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceMut14"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceMut14"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextSMut15"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceSMut16"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceSMut16"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextCom17"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceCom18"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceCom18"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextNuc19"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceNuc20"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceNuc20"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextChev21"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceChev22"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceChev22"></RowDefinition>
 
                         <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextPal23"></RowDefinition>
-                        <RowDefinition Height="10" Name="Spacepal24"></RowDefinition>
+                        <RowDefinition Height="{StaticResource BigHeigthGrid}" Name="Spacepal24"></RowDefinition>
 
-                        <RowDefinition Height="50" Name="Button25"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceButton26"></RowDefinition>
+                        <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextArme25"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceArme26"></RowDefinition>
+                        
+                        <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextDef27"></RowDefinition>
+                        <RowDefinition Height="{StaticResource BigHeigthGrid}" Name="Spacedef28"></RowDefinition>
 
-                        <RowDefinition Height="{StaticResource heigthTextBlock }" Name="TextLife27"></RowDefinition>
-                        <RowDefinition Height="10" Name="SpaceLife28"></RowDefinition>
+                        <RowDefinition Height="{StaticResource BigHeigthGrid}" Name="Button29"></RowDefinition>
+                        <RowDefinition Height="{StaticResource HeigthInterligne}" Name="SpaceButton30"></RowDefinition>
 
-
+                        
                     </Grid.RowDefinitions>
-
+                    
+                    <!-- ////////////////////////////////////////////////////////////////////Ends of grid/////////////////////////////////////////////////////////////////////////////// -->
+                        
+                    
                     <TextBlock Grid.Column="1" Text="Votre Armée" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="ExtraBlack"></TextBlock>
                     <TextBlock Grid.Column="2" Text="Armée ennemie" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" FontWeight="ExtraBlack"></TextBlock>
 
@@ -97,13 +104,15 @@
                     <TextBlock Text="Nucleotron:" Grid.Row="19" HorizontalAlignment="Stretch"></TextBlock>
                     <TextBlock Text="Chevalier:" Grid.Row="21" HorizontalAlignment="Stretch"></TextBlock>
                     <TextBlock Text="Paladin:" Grid.Row="23" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Arme :" Grid.Row="25" HorizontalAlignment="Stretch"></TextBlock>
+                    <TextBlock Text="Defense :" Grid.Row="27" HorizontalAlignment="Stretch"></TextBlock>
                     
                     <!-- Our army units TextBox-->
                     <TextBox Grid.Row="1" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Gs" ></TextBox>
                     <TextBox Grid.Row="3" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_G" ></TextBox>
                     <TextBox Grid.Row="5" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_Cdg" ></TextBox>
                     <TextBox Grid.Row="7" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_Merc" ></TextBox>
-                    <TextBox Grid.Row="9" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_merc" ></TextBox>
+                    <TextBox Grid.Row="9" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_Pil" ></TextBox>
                     <TextBox Grid.Row="11" Grid.Column="1" Width="{StaticResource MyDouble}"  Name="OA_Prot" ></TextBox>
                     <TextBox Grid.Row="13" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Mut" ></TextBox>
                     <TextBox Grid.Row="15" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_SupMut" ></TextBox>
@@ -111,14 +120,16 @@
                     <TextBox Grid.Row="19" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Nucl" ></TextBox>
                     <TextBox Grid.Row="21" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Chev" ></TextBox>
                     <TextBox Grid.Row="23" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Pal" ></TextBox>
+                    <TextBox Grid.Row="25" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_Arme" ></TextBox>
+                    <TextBox Grid.Row="27" Grid.Column="1" Width="{StaticResource MyDouble}" Name="OA_def" ></TextBox>
 
-                    
+
                     <!-- Ennemy army units TextBox-->
                     <TextBox Grid.Row="1" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Gs" ></TextBox>
                     <TextBox Grid.Row="3" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_G" ></TextBox>
                     <TextBox Grid.Row="5" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Cdg" ></TextBox>
                     <TextBox Grid.Row="7" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Merc" ></TextBox>
-                    <TextBox Grid.Row="9" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_merc" ></TextBox>
+                    <TextBox Grid.Row="9" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Pil" ></TextBox>
                     <TextBox Grid.Row="11" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Prot" ></TextBox>
                     <TextBox Grid.Row="13" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Mut" ></TextBox>
                     <TextBox Grid.Row="15" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_SupMut" ></TextBox>
@@ -126,13 +137,14 @@
                     <TextBox Grid.Row="19" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Nucl" ></TextBox>
                     <TextBox Grid.Row="21" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Chev" ></TextBox>
                     <TextBox Grid.Row="23" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Pal" ></TextBox>
+                    <TextBox Grid.Row="25" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Arme" ></TextBox>
+                    <TextBox Grid.Row="27" Grid.Column="3" Width="{StaticResource MyDouble}" Name="EA_Def" ></TextBox>
 
                     <!-- Calcul and remove button-->
-                    <Button Grid.Column="1" Grid.Row="25" Width="{StaticResource MyDouble}" Content="Calculer" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
-                    <Button Grid.Column="2" Grid.Row="25" Width="{StaticResource MyDouble}" Content="Annuler" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+                    <Button Grid.Column="1" Grid.Row="29" Width="{StaticResource MyDouble}" Content="Calculer" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center"></Button>
+                    <Button Grid.Column="2" Grid.Row="29" Width="{StaticResource MyDouble}" Content="Annuler" FontSize="30"  VerticalAlignment="Center" HorizontalAlignment="Center" Click="Button_Annuler_Click"></Button>
                     
-                    <!-- result-->
-                    <TextBlock Grid.Column="0" Grid.Row="27" Text="Vie total de l'armée :"></TextBlock>
+                  
                     
                 </Grid>
             </TabItem>
