@@ -15,3 +15,14 @@ C:\Users\Florentin\Desktop\WarArmy2\WarArmy\WarArmy\obj\Debug\WarArmy.pdb
 C:\war2k1\WarArmy\WarArmy\bin\Debug\WarArmy.exe.config
 C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.exe
 C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.pdb
+C:\war2k1\WarArmy\WarArmy\bin\Debug\WarArmy.exe
+C:\war2k1\WarArmy\WarArmy\bin\Debug\WarArmy.pdb
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.csprojResolveAssemblyReference.cache
+C:\war2k1\WarArmy\WarArmy\obj\Debug\MainWindow.g.cs
+C:\war2k1\WarArmy\WarArmy\obj\Debug\App.g.cs
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy_MarkupCompile.cache
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy_MarkupCompile.lref
+C:\war2k1\WarArmy\WarArmy\obj\Debug\MainWindow.baml
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.g.resources
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.Properties.Resources.resources
+C:\war2k1\WarArmy\WarArmy\obj\Debug\WarArmy.csproj.GenerateResource.Cache

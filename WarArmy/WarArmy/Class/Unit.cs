@@ -8,5 +8,18 @@ namespace WarArmy.Class
 {
     class Unit
     {
+        String name;
+        int life;
+        int atk;
+        int def;
+
+        //Constructor
+        public Unit(string name, int life, int atk, int def)
+        {
+            this.name = name;
+            this.life = life;
+            this.atk = atk;
+            this.def = def;
+        }
     }
 }
